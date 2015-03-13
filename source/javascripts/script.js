@@ -1,26 +1,42 @@
 $(function () {
+
+  var AirSigns = {
+    BritishAirways: {
+      id: '#britishairways'
+    },
+    Lufthansa: {
+      id: '#lufthansa'
+    },
+    AirFrance: {
+      id: '#airfrance'
+    }
+  }
+
   var LHR = {
     name: "Heathrow",
-    longitude: 42,
-    latitude: 42
+    longitude: 51.470022,
+    latitude: -0.454296,
+    airsign: AirSigns.BritishAirways
   };
 
   var FRA = {
     name: "Frankfurt",
-    longitude: 24,
-    latitude: 24
+    longitude: 50.037933,
+    latitude: 8.562152,
+    airsign: AirSigns.Lufthansa
   };
 
   var CDG = {
     name: "Charles de Gaulles",
-    longitude: 130,
-    latitude: 130
+    longitude: 49.009691,
+    latitude: 2.547924,
+    airsign: AirSigns.AirFrance
   };
 
   var airports = [LHR, FRA, CDG];
 
   function calculateDistance(airport, position) {
-    return Math.abs(airport.longitude - position.coords.longitude);
+    return Math.sqrt(Math.pow(airport.longitude - position.coords.longitude, 2) + Math.pow(airport.latitude - position.coords.latitude, 2));
   }
 
   $('#find-sign').click(function() {
@@ -35,7 +51,6 @@ $(function () {
 
         airports.forEach(function(airport){
           distance = calculateDistance(airport, position);
-          console.log(airport);
 
           if (!closestAirport) {
             closestAirport = airport;
@@ -48,6 +63,10 @@ $(function () {
 
         // wähle den airport der am nächsten ...
         console.log(closestAirport);
+
+        // closestAirport = LHR;
+
+        $(closestAirport.airsign.id).show();
 
       });
 		} else {
