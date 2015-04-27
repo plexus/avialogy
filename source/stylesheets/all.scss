@@ -25,6 +25,12 @@ h1 {
   color: $font-color;
 }
 
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: $font-color;
+}
+
 p {
   max-width: 600px;
   margin: 1.2em auto;
@@ -59,10 +65,15 @@ p {
   margin: 0 auto;
   margin-bottom: $default-margin;
   
-  img {
+  div {
+    display: inline-block;
+    max-width: 220px;
     padding: 10px;
   }
 
+  img {
+    padding: 10px;
+  }
 }
 
 footer {
@@ -73,7 +84,7 @@ footer {
     color: $white;
     font-weight: 200;
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 700 00px;
   }
 
   a:link, a:visited {
