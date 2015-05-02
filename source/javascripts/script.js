@@ -20,25 +20,24 @@ $(function () {
     
     AirFrance: {
       id: '#airfrance'
-    }
+    },
 
     Aeroflot: {
       id: '#aeroflot'
-    }
+    },
 
     Norwegian: {
       id: '#norwegian'
-    }
+    },
 
     EasyJet: {
       id: '#easyjet'
-    }
+    },
 
     Ryanair: {
       id: '#ryanair'
     }
-
-  }
+  };
 
   var AMS = {
     name: "Amsterdam",
@@ -231,6 +230,8 @@ $(function () {
 
   var airports = [AMS, ARN, ATH, BRU, BUD, CDG, CPH, DUB, FCO, FRA, HEL, LCA, LHR, LIS, LJU, LUX, MAD, MLA, OTP, PRG, RIX, SOF, TLL, VIE, VNO, WAW, ZAG];
 
+});
+
   function calculateDistance(airport, position) {
     return Math.sqrt(Math.pow(airport.longitude - position.coords.longitude, 2) + Math.pow(airport.latitude - position.coords.latitude, 2));
   }
@@ -270,12 +271,3 @@ $(function () {
     }
 
   });
-
-/*  $("#sign-british").click(function(){
-    $(".airsign").hide();
-    $("#britishairways-gallery").show();
-  })
-
-});
-
-*/
