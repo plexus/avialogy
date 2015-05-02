@@ -2,98 +2,10 @@
 
 @import "colors";
 
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-$default-margin: 80px;
-$font-color: #011c31;
-$white: #fff;
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic);
 
-body, p, button {
-  font-family: 'Lato', sans-serif; 
-}
-
-body, p {
+body {
   background: #fff;
   text-align: center;
-  line-height: 1.5em;
-  color: $font-color;
-}
+  font-family: 'Roboto', sans-serif; }
 
-h1 {
-  font-size: 1.5em;
-  font-weight: 400;
-  margin-bottom: $default-margin;
-  color: $font-color;
-}
-
-h2 {
-  font-size: 1.5em;
-  font-weight: 400;
-  color: $font-color;
-}
-
-p {
-  max-width: 600px;
-  margin: 1.2em auto;
-}
-
-
-#header {
-  background: image-url("header.png") #011c31 no-repeat center;
-  height: 360px;
-  width: auto;
-  margin-bottom: $default-margin;
-}
-
-.last {
-  margin-bottom: $default-margin;
-}
-
-#find-sign {
-  background: #011c31;
-  border: none;
-  border-radius: 5px;
-  padding: 20px 100px;
-  font-size: 1.5em;
-  font-weight: 300;
-  letter-spacing: 5px;
-  margin-bottom: $default-margin;
-  color: #fff;
-}
-
-#air-sign-gallery {
-  max-width: 800px;
-  margin: 0 auto;
-  margin-bottom: $default-margin;
-  
-  div {
-    display: inline-block;
-    max-width: 220px;
-    padding: 10px;
-  }
-
-  img {
-    padding: 10px;
-  }
-}
-
-footer {
-  background: $font-color;
-  
-  div {
-    padding: 20px 0;
-    color: $white;
-    font-weight: 200;
-    margin: 0 auto;
-    max-width: 700 00px;
-  }
-
-  a:link, a:visited {
-    text-decoration: none;
-    color: #08e8de;
-  }
-  a:hover {
-    text-decoration: none;
-    color: $font-color;
-  }
-
-}
