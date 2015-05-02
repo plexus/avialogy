@@ -1,16 +1,32 @@
 $(function () {
 
   var AirSigns = {
+    
+    Iberia: {
+      id: '#iberia'
+    },
+
     BritishAirways: {
       id: '#britishairways'
     },
     Lufthansa: {
       id: '#lufthansa'
     },
+
+    KLM: {
+      id: '#klm'
+    },
     AirFrance: {
       id: '#airfrance'
     }
   }
+
+  var IB = {
+    name: "Madrid",
+    longitude: 40.483936,
+    latitude: -3.567952,
+    airsign: AirSigns.iberia
+  };
 
   var LHR = {
     name: "Heathrow",
@@ -26,6 +42,13 @@ $(function () {
     airsign: AirSigns.Lufthansa
   };
 
+   var AMS = {
+    name: "Amsterdam",
+    longitude: 52.310539,
+    latitude: 4.768274,
+    airsign: AirSigns.KLM
+  };
+
   var CDG = {
     name: "Charles de Gaulles",
     longitude: 49.009691,
@@ -33,7 +56,7 @@ $(function () {
     airsign: AirSigns.AirFrance
   };
 
-  var airports = [LHR, FRA, CDG];
+  var airports = [LHR, FRA, CDG, AMS, IB];
 
   function calculateDistance(airport, position) {
     return Math.sqrt(Math.pow(airport.longitude - position.coords.longitude, 2) + Math.pow(airport.latitude - position.coords.latitude, 2));
@@ -65,12 +88,18 @@ $(function () {
         console.log(closestAirport);
 
         // closestAirport = LHR;
-
+        $(".airsign").hide();
         $(closestAirport.airsign.id).show();
 
       });
 		} else {
       /* geolocation IS NOT available */
     }
+
   });
+
+  $("#sign-british").click(function(){
+    $(".airsign").hide();
+    $("#britishairways-gallery").show();
+  })
 });
