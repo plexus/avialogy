@@ -1,63 +1,85 @@
-@charset "UTF-8";
-/* line 5, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
-body {
-  background: #d4d4d4 url("../images/background.png");
-  text-align: center;
-  font-family: sans-serif; }
-
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 /* line 10, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
-h1 {
-  color: rgba(0, 0, 0, 0.3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
-  margin: 0; }
+body, p, button {
+  font-family: 'Lato', sans-serif; }
+
+/* line 14, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
+body, p {
+  background: #fff;
+  text-align: center;
+  line-height: 1.5em;
+  color: #011c31; }
 
 /* line 21, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
-body.bla h1 {
-  color: rgba(255, 0, 0, 0.3); }
-
-/* line 25, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
-.doc {
-  font-size: 14px;
-  margin: 0; }
+h1 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 80px;
+  color: #011c31; }
 
 /* line 28, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
-.doc:before,
-.doc:after {
-  opacity: .2;
-  padding: 6px;
-  font-style: normal;
-  position: relative;
-  content: "•"; }
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #011c31; }
 
-/* line 35, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
-.doc a {
-  color: rgba(0, 0, 0, 0.3); }
-
-/* line 37, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
-.doc a:hover {
-  color: red; }
+/* line 34, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
+p {
+  max-width: 600px;
+  margin: 1.2em auto; }
 
 /* line 40, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
+#header {
+  background: url("../images/header.png") #011c31 no-repeat center;
+  height: 360px;
+  width: auto;
+  margin-bottom: 80px; }
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0; }
-  50% {
-    -webkit-transform: scale(0);
-    opacity: 0; }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1; }
-  to {
-    -webkit-transform: scale(1); } }
+/* line 47, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
+.last {
+  margin-bottom: 80px; }
+
+/* line 51, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
+#find-sign {
+  background: #011c31;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 100px;
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-bottom: 80px;
+  color: #fff; }
+
+/* line 63, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
+#air-sign-gallery {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 80px; }
+  /* line 68, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
+  #air-sign-gallery div {
+    display: inline-block;
+    max-width: 220px;
+    padding: 10px; }
+  /* line 74, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
+  #air-sign-gallery img {
+    padding: 10px; }
+
+/* line 80, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
+footer {
+  background: #011c31; }
+  /* line 83, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
+  footer div {
+    padding: 20px 0;
+    color: #fff;
+    font-weight: 200;
+    margin: 0 auto;
+    max-width: 700px; }
+  /* line 91, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
+  footer a:link, footer a:visited {
+    text-decoration: none;
+    color: #08e8de; }
+  /* line 95, /Users/Sonja/Desktop/Projects/Avialogy/web/source/stylesheets/all.scss */
+  footer a:hover {
+    text-decoration: none;
+    color: #011c31; }
