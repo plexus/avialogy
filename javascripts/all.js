@@ -10404,7 +10404,7 @@ $(function () {
     name: "Athens",
     longitude: 37.935647,
     latitude: 23.948416,
-    airsign: AirSigns.KLM
+    airsign: AirSigns.Aeroflot
   };
 
   var BRU = {
@@ -10488,14 +10488,14 @@ $(function () {
     name: "Ljubljana",
     longitude: 46.225943,
     latitude: 14.455914,
-    airsign: AirSigns.Iberia
+    airsign: AirSigns.EasyJet
   };
 
   var LUX = {
     name: "Luxembourg",
     longitude: 49.6289,
     latitude: 6.214745,
-    airsign: AirSigns.Iberia
+    airsign: AirSigns.Lufthansa
   };
 
   var MAD = {
@@ -10516,21 +10516,21 @@ $(function () {
     name: "Romania",
     longitude: 44.570731,
     latitude: 26.084412,
-    airsign: AirSigns.Iberia
+    airsign: AirSigns.Aeroflot
   };
 
   var PRG = {
     name: "Prag",
     longitude: 50.101791,
     latitude: 14.263181,
-    airsign: AirSigns.Lufthansa
+    airsign: AirSigns.EasyJet
   };
 
   var RIX = {
     name: "Riga",
     longitude: 56.922655,
     latitude: 23.973313,
-    airsign: AirSigns.Aeroflot
+    airsign: AirSigns.Norwegian
   };
 
   var SOF = {
@@ -10544,14 +10544,14 @@ $(function () {
     name: "Tallinn",
     longitude: 59.41636,
     latitude: 24.802738,
-    airsign: AirSigns.Lufthansa
+    airsign: AirSigns.Norwegian
   };
 
   var VIE = {
     name: "Vienna",
     longitude: 48.115833,
     latitude: 16.566575,
-    airsign: AirSigns.Aeroflot
+    airsign: AirSigns.Lufthansa
   };
 
   var VNO = {
@@ -10572,7 +10572,7 @@ $(function () {
     name: "Zagreb",
     longitude: 45.74075,
     latitude: 16.067436,
-    airsign: AirSigns.Lufthansa
+    airsign: AirSigns.Ryanair
   };
 
   var airports = [AMS, ARN, ATH, BRU, BUD, CDG, CPH, DUB, FCO, FRA, HEL, LCA, LHR, LIS, LJU, LUX, MAD, MLA, OTP, PRG, RIX, SOF, TLL, VIE, VNO, WAW, ZAG];
