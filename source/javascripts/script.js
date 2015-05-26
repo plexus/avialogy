@@ -231,7 +231,27 @@ $(function () {
   var airports = [AMS, ARN, ATH, BRU, BUD, CDG, CPH, DUB, FCO, FRA, HEL, LCA, LHR, LIS, LJU, LUX, MAD, MLA, OTP, PRG, RIX, SOF, TLL, VIE, VNO, WAW, ZAG];
 
   function calculateDistance(airport, position) {
-    return Math.sqrt(Math.pow(airport.longitude - position.coords.longitude, 2) + Math.pow(airport.latitude - position.coords.latitude, 2));
+    var lat1,
+        lat2,
+        lon_d,
+        degrees_to_radians;
+    degrees_to_radians = Math.PI / 180;
+
+    lat1 = airport.latitude         * degrees_to_radians;
+    lat2 = position.coords.latitude * degrees_to_radians;
+    lon_d = Math.abs( airport.longitude - position.coords.longitude ) * degrees_to_radians;
+
+    return Math.atan2(
+      Math.sqrt(
+        Math.pow(Math.cos(lat2) * Math.sin(lon_d), 2.0) +
+        Math.pow(
+          Math.cos(lat1) * Math.sin(lat2) -
+          Math.sin(lat1) * Math.cos(lat2) * Math.cos(lon_d), 2.0
+        )
+      ),
+      Math.sin(lat1) * Math.sin(lat2) +
+      Math.cos(lat1) * Math.cos(lat2) * Math.cos(lon_d)
+    );
   }
 
   $('#find-sign').click(function() {
