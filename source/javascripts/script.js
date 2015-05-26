@@ -37,7 +37,7 @@ $(function () {
     Ryanair: {
       id: '#ryanair'
     }
-  }
+  };
 
   var AMS = {
     name: "Amsterdam",
