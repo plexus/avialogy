@@ -242,7 +242,7 @@ $(function () {
         //do_something(position.coords.latitude, position.coords.longitude);
         console.log(position);
 
-        var closestAirport, closestDistance;
+        var closestAirport, closestDistance, distance;
 
         airports.forEach(function(airport){
           distance = calculateDistance(airport, position);
