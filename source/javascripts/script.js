@@ -31,6 +31,7 @@ $(function () {
     },
 
     EasyJet: {
+      
       id: '#easyjet'
     },
 
@@ -256,36 +257,35 @@ $(function () {
 
   $('#find-sign').click(function() {
     if ("geolocation" in navigator) {
-  		/* geolocation is available */
       console.log('geolocation available');
       navigator.geolocation.getCurrentPosition(function(position) {
-        //do_something(position.coords.latitude, position.coords.longitude);
+
         console.log(position);
 
+<<<<<<< Updated upstream
         var closestAirport, closestDistance, distance;
+=======
+        var closestAirport;
+>>>>>>> Stashed changes
 
         airports.forEach(function(airport){
           distance = calculateDistance(airport, position);
 
           if (!closestAirport) {
             closestAirport = airport;
-            closestDistance = distance;
-          } else if (distance <= closestDistance) {
+          } else if (distance < closestAirport) {
             closestAirport = airport;
-            closestDistance = distance;
           } 
         });
 
-        // wähle den airport der am nächsten ...
         console.log(closestAirport);
 
-        // closestAirport = LHR;
         $(".airsign").hide();
         $(closestAirport.airsign.id).show();
 
       });
-		} else {
-      /* geolocation IS NOT available */
+    } else {
+      $(airsign.FRA).show();
     }
 
   });
