@@ -1,7 +1,7 @@
 $(function () {
 
   var AirSigns = {
-    
+
     Lufthansa: {
       id: '#lufthansa'
     },
@@ -17,7 +17,7 @@ $(function () {
     KLM: {
       id: '#klm'
     },
-    
+
     AirFrance: {
       id: '#airfrance'
     },
@@ -31,7 +31,7 @@ $(function () {
     },
 
     EasyJet: {
-      
+
       id: '#easyjet'
     },
 
@@ -116,7 +116,7 @@ $(function () {
     latitude: 24.95286,
     airsign: AirSigns.Norwegian
   };
-  
+
   var LCA = {
     name: "Cyprus",
     longitude: 34.87234,
@@ -165,7 +165,7 @@ $(function () {
     latitude: 14.48328,
     airsign: AirSigns.EasyJet
   };
-  
+
   var OTP = {
     name: "Romania",
     longitude: 44.570731,
@@ -262,11 +262,7 @@ $(function () {
 
         console.log(position);
 
-<<<<<<< Updated upstream
         var closestAirport, closestDistance, distance;
-=======
-        var closestAirport;
->>>>>>> Stashed changes
 
         airports.forEach(function(airport){
           distance = calculateDistance(airport, position);
@@ -275,7 +271,7 @@ $(function () {
             closestAirport = airport;
           } else if (distance < closestAirport) {
             closestAirport = airport;
-          } 
+          }
         });
 
         console.log(closestAirport);
