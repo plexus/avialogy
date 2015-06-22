@@ -265,12 +265,12 @@ $(function () {
         var closestAirport, closestDistance, distance;
 
         airports.forEach(function(airport){
+
           distance = calculateDistance(airport, position);
 
-          if (!closestAirport) {
+          if (!closestAirport || distance < closestDistance) {
             closestAirport = airport;
-          } else if (distance < closestAirport) {
-            closestAirport = airport;
+            closestDistance = distance;
           }
         });
 
