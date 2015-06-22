@@ -42,190 +42,190 @@ $(function () {
 
   var AMS = {
     name: "Amsterdam",
-    longitude: 52.310539,
-    latitude: 4.768274,
+    latitude: 52.310539,
+    longitude: 4.768274,
     airsign: AirSigns.KLM
   };
 
   var ARN = {
     name: "Stockholm",
-    longitude: 59.649762,
-    latitude: 17.923781,
+    latitude: 59.649762,
+    longitude: 17.923781,
     airsign: AirSigns.Norwegian
   };
 
   var ATH = {
     name: "Athens",
-    longitude: 37.935647,
-    latitude: 23.948416,
+    latitude: 37.935647,
+    longitude: 23.948416,
     airsign: AirSigns.Aeroflot
   };
 
   var BRU = {
     name: "Brussels",
-    longitude: 50.900999,
-    latitude: 4.485574,
+    latitude: 50.900999,
+    longitude: 4.485574,
     airsign: AirSigns.KLM
   };
 
   var BUD = {
     name: "Budapest",
-    longitude: 47.438459,
-    latitude: 19.252296,
+    latitude: 47.438459,
+    longitude: 19.252296,
     airsign: AirSigns.Iberia
   };
 
   var CDG = {
     name: "Charles de Gaulles",
-    longitude: 49.009691,
-    latitude: 2.547924,
+    latitude: 49.009691,
+    longitude: 2.547924,
     airsign: AirSigns.AirFrance
   };
 
   var CPH = {
     name: "Copenhagen",
-    longitude: 55.618024,
-    latitude: 12.650763,
+    latitude: 55.618024,
+    longitude: 12.650763,
     airsign: AirSigns.Norwegian
   };
 
   var DUB = {
     name: "Dublin",
-    longitude: 53.426448,
-    latitude: -6.24991,
+    latitude: 53.426448,
+    longitude: -6.24991,
     airsign: AirSigns.Ryanair
   };
 
   var FCO = {
     name: "Rome",
-    longitude: 41.799887,
-    latitude: 12.246238,
+    latitude: 41.799887,
+    longitude: 12.246238,
     airsign: AirSigns.Ryanair
   };
 
   var FRA = {
     name: "Frankfurt",
-    longitude: 50.037933,
-    latitude: 8.562152,
+    latitude: 50.037933,
+    longitude: 8.562152,
     airsign: AirSigns.Lufthansa
   };
 
   var HEL = {
     name: "Helsinki",
-    longitude: 60.321042,
-    latitude: 24.95286,
+    latitude: 60.321042,
+    longitude: 24.95286,
     airsign: AirSigns.Norwegian
   };
 
   var LCA = {
     name: "Cyprus",
-    longitude: 34.87234,
-    latitude: 33.620352,
+    latitude: 34.87234,
+    longitude: 33.620352,
     airsign: AirSigns.Aeroflot
   };
 
   var LHR = {
     name: "Heathrow",
-    longitude: 51.470022,
-    latitude: -0.454296,
+    latitude: 51.470022,
+    longitude: -0.454296,
     airsign: AirSigns.BritishAirways
   };
 
   var LIS = {
     name: "Lisbon",
-    longitude: 38.775594,
-    latitude: -9.135367,
+    latitude: 38.775594,
+    longitude: -9.135367,
     airsign: AirSigns.Iberia
   };
 
   var LJU = {
     name: "Ljubljana",
-    longitude: 46.225943,
-    latitude: 14.455914,
+    latitude: 46.225943,
+    longitude: 14.455914,
     airsign: AirSigns.EasyJet
   };
 
   var LUX = {
     name: "Luxembourg",
-    longitude: 49.6289,
-    latitude: 6.214745,
+    latitude: 49.6289,
+    longitude: 6.214745,
     airsign: AirSigns.Lufthansa
   };
 
   var MAD = {
     name: "Madrid",
-    longitude: 40.483936,
-    latitude: -3.567952,
+    latitude: 40.483936,
+    longitude: -3.567952,
     airsign: AirSigns.Iberia
   };
 
   var MLA = {
     name: "Malta",
-    longitude: 35.854114,
-    latitude: 14.48328,
+    latitude: 35.854114,
+    longitude: 14.48328,
     airsign: AirSigns.EasyJet
   };
 
   var OTP = {
     name: "Romania",
-    longitude: 44.570731,
-    latitude: 26.084412,
+    latitude: 44.570731,
+    longitude: 26.084412,
     airsign: AirSigns.Aeroflot
   };
 
   var PRG = {
     name: "Prag",
-    longitude: 50.101791,
-    latitude: 14.263181,
+    latitude: 50.101791,
+    longitude: 14.263181,
     airsign: AirSigns.EasyJet
   };
 
   var RIX = {
     name: "Riga",
-    longitude: 56.922655,
-    latitude: 23.973313,
+    latitude: 56.922655,
+    longitude: 23.973313,
     airsign: AirSigns.Norwegian
   };
 
   var SOF = {
     name: "Sofia",
-    longitude: 42.689384,
-    latitude: 23.402516,
+    latitude: 42.689384,
+    longitude: 23.402516,
     airsign: AirSigns.Aeroflot
   };
 
   var TLL = {
     name: "Tallinn",
-    longitude: 59.41636,
-    latitude: 24.802738,
+    latitude: 59.41636,
+    longitude: 24.802738,
     airsign: AirSigns.Norwegian
   };
 
   var VIE = {
     name: "Vienna",
-    longitude: 48.115833,
-    latitude: 16.566575,
+    latitude: 48.115833,
+    longitude: 16.566575,
     airsign: AirSigns.Lufthansa
   };
 
   var VNO = {
     name: "Vilnius",
-    longitude: 54.638037,
-    latitude: 25.286558,
+    latitude: 54.638037,
+    longitude: 25.286558,
     airsign: AirSigns.Aeroflot
   };
 
   var WAW = {
     name: "Warsaw",
-    longitude: 52.167237,
-    latitude: 20.967891,
+    latitude: 52.167237,
+    longitude: 20.967891,
     airsign: AirSigns.EasyJet
   };
 
   var ZAG = {
     name: "Zagreb",
-    longitude: 45.74075,
-    latitude: 16.067436,
+    latitude: 45.74075,
+    longitude: 16.067436,
     airsign: AirSigns.Ryanair
   };
 
